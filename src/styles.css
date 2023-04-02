@@ -28,23 +28,6 @@ a {
   color: #0d1381;
 }
 
-/* .container {
-  width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 40px 0;
-  border: 2px solid red;
-} */
-/* padding-left: 15px;
-  padding-right: 15px; */
-
-/* .gallery-card {
-  background-color: #fff;
-  flex-basis: calc(25% - 12.5px);
-
-  text-align: center;
-} */
-
 .search-form {
   display: flex;
   flex-direction: row;
@@ -81,52 +64,6 @@ input {
 .submit:hover {
   background-color: #8083b0;
 }
-/* .gallery {
-  /* display: flex;
-  flex-wrap: wrap;
-  gap: 30px; */
-
-/* flex-wrap: wrap;
-  justify-content: center;
-  align-items: baseline;
-  gap: 30px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  list-style: none;
-  display: flex;
-} */
-
-/* .gallery-item {
-  height: 100%;
-  flex-direction: column;
-  /* display: flex; */
-/* width: 100%;
-
-  max-width: unset;
-  object-fit: cover;
-  display: block;
-} */
-
-/* .info {
-  width: 100%;
-  gap: 10px;
-  padding: 10px 14px;
-  display: flex;
-}
-
-.info-item {
-  color: #000;
-  flex-direction: column;
-  flex-basis: calc(25% - 7.5px);
-  align-items: center;
-  margin-left: 0;
-  margin-right: 0;
-  display: flex;
-}
-
-.info-item b {
-  margin-right: 10px;
-} */
 
 .load-more {
   width: 100px;
@@ -153,7 +90,7 @@ input {
 
 .gallery {
   padding-top: 50px;
-  /* padding-bottom: 50px; */
+
   list-style: none;
   display: flex;
   justify-content: center;
