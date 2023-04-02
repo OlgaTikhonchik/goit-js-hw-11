@@ -26,6 +26,8 @@ function renderGallery(images) {
       `;
     })
     .join('');
+
+  return markup;
 }
 
 export { renderGallery };
