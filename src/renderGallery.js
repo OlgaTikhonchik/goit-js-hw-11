@@ -2,7 +2,6 @@ function renderGallery(images) {
   const markup = images
     .map(image => {
       const {
-        id,
         largeImageURL,
         webformatURL,
         tags,
@@ -12,19 +11,23 @@ function renderGallery(images) {
         downloads,
       } = image;
       return `
-        <div class = "gallery-card">
-          <a class="gallery__link" href="${largeImageURL}">
-            <div class="gallery-item" id="${id}">
-              <img class="gallery-item__img" src="${webformatURL}" alt="${tags}" loading="lazy" width="320" height="200" />
-              <div class="info">
-                <p class="info-item"><b>Likes</b>${likes}</p>
-                <p class="info-item"><b>Views</b>${views}</p>
-                <p class="info-item"><b>Comments</b>${comments}</p>
-                <p class="info-item"><b>Downloads</b>${downloads}</p>
-              </div>
-            </div>
-          </a>
-        </div>
+        <div class="photo-card">
+         <a class='gallery__link' href="${largeImageURL}"><img src="${webformatURL}" alt="${tags}" loading="lazy" /></a>
+         <div class="info">
+           <p class="info-item">
+             <b>Likes ${likes}</b>
+           </p>
+           <p class="info-item">
+             <b>Views ${views}</b>
+           </p>
+           <p class="info-item">
+             <b>Comments ${comments}</b>
+           </p>
+           <p class="info-item">
+             <b>Downloads ${downloads}</b>
+           </p>
+         </div>
+       </div>
       `;
     })
     .join('');
